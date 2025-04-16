@@ -10,13 +10,33 @@ public class Array {
         ninjas[1] = "Sasuke Uchiha";
         ninjas[2] = "Sakura Haruna";
         ninjas[3] = "Hinata Hyuga";
-
         System.out.println(ninjas[3]);
+
+        // Redeclarar String
+        String nomeNinja = "Naruto Uzumaki";
+        nomeNinja = "Boruto Uzumaki";
+
+
+        // Redeclarar o ARRAY
+        ninjas = new String[7];
+        ninjas [0] = "Hashirama senju";
+        ninjas [1] = "Tobirama senju";
+        ninjas [2] = "Hiruzen Sarutobi";
+        ninjas [3] = "Minato Namikaze";
+        ninjas [4] = "Tsunade";
+        ninjas [5] = "Kakashi hatake";
+        ninjas [6] = "Naruto Uzumake";
+        System.out.println(ninjas[4]);
+
+        // For para fazer um LOOP Array
+        for (int i = 0; i <= 6; i++) {
+            System.out.println(i+ " " + ninjas[i]);
+        }
 
         //Array idade
         //int inicializam como 0
         int[] idade = new int[1];
-        System.out.println(idade[0]);
+//        System.out.println(idade[0]);
 
         //Array
         // Bolean inicializam como false
