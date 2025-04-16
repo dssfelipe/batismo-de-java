@@ -1,8 +1,7 @@
-package missaoNinja;
+package Desafio1;
 
 public class konoha {
     public static void main(String[] args) {
-
         // Ninja 1
         String nomeNinja1 = "Naruto Uzumaki";
         int idade = 14;
