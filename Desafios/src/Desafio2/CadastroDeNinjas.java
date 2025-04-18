@@ -37,7 +37,7 @@ public class CadastroDeNinjas {
 
 
 
-                //// Executa a ação de acordo com a opção escolhida pelo usuário
+                // Executa a ação de acordo com a opção escolhida pelo usuário
                 switch (menu) {
                     case 1:
 
