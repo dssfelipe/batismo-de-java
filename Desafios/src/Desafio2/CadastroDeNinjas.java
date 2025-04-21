@@ -9,7 +9,6 @@ public class CadastroDeNinjas {
         String[] nomeDosNinjas = new String[5];
 
         int menu = -1; // Variável usada para armazenar a opção escolhida no menu
-        int variavelSwitch;
         int contador = 0;
 
         while (menu != 3){
