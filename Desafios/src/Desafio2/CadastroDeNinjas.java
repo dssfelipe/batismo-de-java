@@ -5,73 +5,67 @@ import java.util.Scanner;
 public class CadastroDeNinjas {
     public static void main(String[] args) {
 
-        // Array para armazenar os nomes dos ninjas cadastrados
-        String[] nomeDosNinjas = new String[5];
+        //Entrada de dados
+        Scanner scanner = new Scanner(System.in);
 
-        int menu = -1; // Variável usada para armazenar a opção escolhida no menu
-        int contador = 0;
+        // Fazer o Array
+        int NUMERO_MAX = 5;
+        String[] ninjas = new String[NUMERO_MAX];
 
-        while (menu != 3){
+        // Contadores
+        int ninjasCadastrados = 0;
+        int opcao = 0;
 
-            //Exibe o menu de opções para o usuário
-            System.out.println("\n===== Menu Ninja =====");
-            System.out.println("1. Cadastrar Ninja");
-            System.out.println("2. Listar Ninjas");
-            System.out.println("3. Sair");
-            System.out.print("Escolha uma opção: ");
+        boolean executando = true;
 
-            // Cria o Scanner para ler as entradas do usuário
-            Scanner scanner = new Scanner(System.in); //Cria o Scanner para ler as entradas do usuário
+        while(opcao != 3){
 
+         // MENU
+        System.out.println("\n===== Menu Ninja =====");
+        System.out.println("1. Cadastrar Ninja");
+        System.out.println("2. Listar Ninjas");
+        System.out.println("3. Sair");
+        System.out.print("Escolha uma opção: ");
+        opcao = scanner.nextInt();
+        scanner.nextLine();
 
-            if (scanner.hasNextInt()) {
-                menu = scanner.nextInt();
-                scanner.nextLine(); // limpa quebra de linha
-            } else {
-                System.out.println("Por favor, digite apenas números.");
-                scanner.nextLine(); // consome o que foi digitado errado
-                continue; // volta para o início do loop
+        switch (opcao){
+            case 1:
+            if (ninjasCadastrados < NUMERO_MAX){
+                System.out.println("Digite o nome do ninja para cadastro: ");
+                String nomeNinja = scanner.nextLine();
+                ninjas[ninjasCadastrados] = nomeNinja;
+                ninjasCadastrados++;
+                System.out.println("Ninja cadastrado com sucesso!");
+
+                }else {
+                System.out.println("A lista de ninja esta cheia, impossivel cadastrar um novo ninja");
             }
+                break;
 
-
-
-
-                // Executa a ação de acordo com a opção escolhida pelo usuário
-                switch (menu) {
-                    case 1:
-
-                        if (contador < nomeDosNinjas.length) {
-
-                            System.out.println("Digite o nome do Ninja: ");
-                            String novoNome = scanner.nextLine();
-                            nomeDosNinjas[contador] = novoNome;
-                            contador++;
-
+            case 2:
+                if (ninjasCadastrados == 0){
+                    System.out.println("Nenhum ninja foi cadastrado!");
+                }else {
+                    System.out.println("Lista de ninjas cadastrados.");
+                    for (int i = 0; i < ninjas.length; i++) {
+                        if (ninjas[i] == null){
+                            continue;
                         }else {
-                            System.out.println("Limete de Ninjas atingido.");
+                            System.out.println((1 + i) + ". " + ninjas[i]);
                         }
-
-                        break;
-
-                    case 2:
-
-                        if (contador == 0) {
-                            System.out.println("Nenhum ninja cadastrado ainda.");
-                        } else {
-                            for (int i = 0; i < contador; i++) {
-                                System.out.println((i + 1) + ". " + nomeDosNinjas[i]);
-                            }
-                        }
-
-                        break;
-
-                    case 3:
-
-                        System.out.println("Obrigado por escolher nossa vila!");
-                        break;
-
+                    }
                 }
+                break;
 
+            case 3:
+                System.out.println("Estamos encerrando o programa... Aguarde...");
+                break;
+
+            default:
+                System.out.println("Opcao incorreta, digite um numero de 1 a 3.");
+                break;
+        }
         }
     }
 }
