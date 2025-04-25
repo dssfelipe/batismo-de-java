@@ -16,8 +16,6 @@ public class CadastroDeNinjas {
         int ninjasCadastrados = 0;
         int opcao = 0;
 
-        boolean executando = true;
-
         while(opcao != 3){
 
          // MENU
