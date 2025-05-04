@@ -6,10 +6,10 @@ public class Ninja {
     int idade;
     String aldeia;
 
-//    Criar um metodo publico personalizado
+/*//    Criar um metodo publico personalizado
     public void SharingaAtivado() {
         System.out.println("Sharinga Ativado!");
-    }
+    }*/
 
 //    Metodo String vai ter que retornar um String
     public String EuSouUmNinja(){

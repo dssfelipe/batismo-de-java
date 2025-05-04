@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Criar o Ninja - Naruto é um OBJETO
-        Ninja Naruto = new Ninja();
+        Uzumaki Naruto = new Uzumaki();
         Naruto.nome = "Naruto Uzumaki";
         Naruto.idade = 17;
         Naruto.aldeia = "Aldeia da Folha";
@@ -15,7 +15,7 @@ public class Main {
         Sasuke.idade = 18;
         Sasuke.aldeia = "Aldeia da Folha";
 
-        Sasuke.SharingaAtivado();
+        /*Sasuke.SharingaAtivado();*/
         String ChamandoMetodo = Sasuke.EuSouUmNinja();
         System.out.println(ChamandoMetodo);
 
@@ -27,6 +27,19 @@ public class Main {
         Sakura.nome = "Sakura Haruno";
         Sakura.idade = 18;
         Sakura.aldeia = "Aldeia da Folha";
+
+        Hyuga Hinata = new Hyuga();
+        Hinata.nome = "Hinata Hyuga";
+        Hinata.aldeia = "Aldeia da Folha";
+        Hinata.idade = 16;
+        Hinata.ByakuganAtivado();
+
+        Boruto Boruto = new Boruto();
+        Boruto.nome = "Boruto Hyuga Uzumaki";
+        Boruto.aldeia = "Aldeia da Folha";
+        Boruto.idade = 9;
+        Boruto.AtivarJougan();
+        Boruto.AtivarOKarma();
 
 
 
