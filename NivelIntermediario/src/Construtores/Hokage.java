@@ -1,12 +1,16 @@
 package Construtores;
 
-public class Hokage {
+public abstract class Hokage {
 
     String nome;
     int idade;
     boolean vivoOuNao;
-    int altura;
+    String audeia;
+    int missoes;
     double saldoBancario;
+    double altura;
+
+    public abstract void sabedoriaHokage();
 
     public Hokage() {
         //Construtor sem nada - no args
@@ -31,11 +35,13 @@ public class Hokage {
 
 
     //Criando construtores automaticamente com Crtl + N
-    public Hokage(String nome, int idade, boolean vivoOuNao, int altura, double saldoBancario) {
+    public Hokage(String nome, int idade, boolean vivoOuNao, String audeia, int missoes, double saldoBancario, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.vivoOuNao = vivoOuNao;
-        this.altura = altura;
+        this.audeia = audeia;
+        this.missoes = missoes;
         this.saldoBancario = saldoBancario;
+        this.altura = altura;
     }
 }
