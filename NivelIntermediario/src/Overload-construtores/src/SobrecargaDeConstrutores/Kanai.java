@@ -4,7 +4,7 @@ public class Kanai {
 
     private String nome;
 
-    public Kunai(String nome) {
+    public void Kunai(String nome) {
         this.nome = nome;
     }
 
