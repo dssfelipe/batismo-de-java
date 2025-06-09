@@ -11,6 +11,8 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     int numeroDeMissoesConcluidas;
     NivelNinja rank;
 
+
+
     public Ninja() {
     }
 

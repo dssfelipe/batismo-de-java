@@ -29,12 +29,5 @@ public class Main {
         //Metodo sobrecarregado
         madara.inteligenciaDeCombate(190);
 
-
-
-
-
-
-
-
     }
 }

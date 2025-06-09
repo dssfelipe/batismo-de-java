@@ -20,4 +20,6 @@ public class Uchiha extends Ninja {
         System.out.println("Meu nome é " + nome + " e esse é meu ataque Uchiha, um ataque de fogo. Eu ja completei: " + numeroDeMissoesConcluidas + " missoes." );
     }
 
+
+
 }
